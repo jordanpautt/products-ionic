@@ -3,5 +3,5 @@ export interface IProducts {
   img:string;
   category: 'hogar' | 'variado';
   description:string;
-  precio: number;
+  price: number;
 }

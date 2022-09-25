@@ -1,4 +1,6 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 import { IProducts } from 'src/app/interfaces/products.interface';
 import { ProductsService } from 'src/app/services/products.service';
 
@@ -12,7 +14,8 @@ export class CardProductsComponent implements OnInit, OnChanges {
   select: string = '';
   products: IProducts[] = []
   showState:boolean = false;
-  constructor(public productService: ProductsService) { }
+  showIndex :number = 0;
+  constructor(private productService: ProductsService, private router:Router ) { }
 
   ngOnInit(): void {
     this.products = this.productService.listProducts
@@ -22,9 +25,15 @@ export class CardProductsComponent implements OnInit, OnChanges {
     this.select = this.selectCategory
   }
 
-  showProduct(){
+  showDetailProduct(index:number){
+    this.showIndex =index;
     this.showState = !this.showState;
-
   }
+
+  goPageShop(price:number  ,name:string){
+    this.router.navigate(['/shop', price,name])
+    
+  }
+
 
 }

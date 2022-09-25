@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Products
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Products</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-select interface="popover" placeholder="Select Category" (ionChange)="handleSelect($event)">
+        <ion-select-option value="hogar">Hogar</ion-select-option>
+        <ion-select-option value="variado">Variados</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="cards">
+    <app-card-products [selectCategory]="selectCategory"></app-card-products>
+  </div>
+</ion-content>

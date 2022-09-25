@@ -1,0 +1,19 @@
+
+<div class="cards" *ngFor="let product of products">
+  <ion-card *ngIf="product.category === select" >
+    <ion-card-header >
+        <ion-card-title>{{product.title}}</ion-card-title>
+         <ion-button fill="clear" color="success" slop="end" (click)="showProduct()">
+          <ion-icon slot="icon-only" name="eye-outline"></ion-icon>
+        </ion-button> 
+    </ion-card-header>
+  
+    <ion-card-content  >
+      <ion-item lines="none" >
+        <p>{{product.description}}</p>
+        <p>{{product.precio | currency}}</p>p>
+        <ion-img [src]="product.img"></ion-img>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</div>

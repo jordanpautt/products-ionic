@@ -1,0 +1,22 @@
+
+
+ion-card{
+  box-shadow: 1px 2px 3px rgba(36, 36, 36, 0.247);
+  
+  ion-card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover{
+    transform: scale(1.07);
+  }
+}
+
+.cards{
+  // display:flex;
+  // flex-direction: column;
+  // gap: 10px;
+  padding: 4px 10px;
+}

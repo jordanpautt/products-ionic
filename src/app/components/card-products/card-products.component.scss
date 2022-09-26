@@ -3,22 +3,28 @@ ion-card {
 
   ion-card-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
+  ion-card-content {
+    .item-info-product {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+  }
+
   &:hover {
-    transform: scale(1.07);
+    transform: scale(1.04);
   }
 }
 
 .cards {
-  padding: 4px 10px;
-}
-
-.item-info-product {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  justify-content: center;
+
+  gap: 10px;
+  padding: 1px 3px;
 }

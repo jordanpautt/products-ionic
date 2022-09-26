@@ -1,8 +1,7 @@
 export interface IProducts {
-  title:string;
-  img:string;
+  title: string;
+  img: string;
   category: 'hogar' | 'variado';
-  description:string;
+  description: string;
   price: number;
-  
 }

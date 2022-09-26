@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  selectCategory: string = '';
+  selectCategory = '';
   constructor() { }
 
   handleSelect(e): void {

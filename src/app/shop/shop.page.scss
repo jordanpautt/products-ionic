@@ -1,60 +1,10 @@
-.check{
-    margin: 5%;
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+ion-card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
+
+	p {
+		display: flex;
+		justify-content: space-between;
+	}
 }
-
-.check2{
-    margin: 5%;
-    padding: 0%;
-    margin-top: -14%;
-    text-align: right;
-    flex-direction: column;
-}
-
-.envio{
-    margin: 5%;
-    padding: 0%;
-    margin-top: -28%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.total{
-    margin: 5%;
-    padding: 0%;
-    margin-top: -1%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.number{
-    margin: 16%;
-    margin-top: 10%;
-    text-align: right;
-    flex-direction: column;
-    
-}
-
-.compra {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    justify-content: center;
-  }
-
-  .cards {
-    padding: 4px 10px;
-  }
-  
-  .linea {
-    border-top: 1px solid black;
-    height: 2px;
-    max-width: 300px;
-    padding: 0;
-    margin: 20px auto 0 auto;
-  }

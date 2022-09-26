@@ -1,29 +1,33 @@
-<div class="cards" *ngFor="let product of products; let i=index;">
+<div class="cards" *ngFor="let product of products; let i = index">
   <ion-card *ngIf="product.category === select">
     <ion-card-header>
-      <ion-card-title>{{product.title}}</ion-card-title>
-      <ion-button fill="clear" color="success" slop="end" (click)="showDetailProduct(i)">
+      <ion-card-title>
+        {{ product.title }}
+      </ion-card-title>
+      <ion-button fill="clear" color="success" (click)="showDetailProduct(i)">
         <ion-icon slot="icon-only" name="eye-outline"></ion-icon>
       </ion-button>
     </ion-card-header>
 
     <ion-card-content>
       <div *ngIf="showState && i === showIndex" class="item-info-product">
-        
-        <p  style="text-align: center;">
+        <p style="text-align: center">
           <ion-text>
-            {{product.description}}
+            {{ product.description }}
           </ion-text>
         </p>
-        <p style="text-align: center;">
-          <ion-text color="secondary">
-
-            {{product.price | currency}}
-          </ion-text>
-          
+        <p style="text-align: center">
+          <ion-badge color="primary" slot="start">{{
+            product.price | currency
+          }}</ion-badge>
         </p>
-        <ion-button fill="clear" slop="end" (click)="goPageShop(product.price,product.title)">
-          <ion-icon name="cart-outline"></ion-icon>
+        <ion-button
+          fill="clear"
+          slop="end"
+          color="success"
+          (click)="goPageShop(product.price, product.title)"
+        >
+          <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
         </ion-button>
       </div>
 

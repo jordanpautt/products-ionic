@@ -1,4 +1,9 @@
 ion-content {
-  --background: #deedf7;
-}
+  --background: #e9eff3;
 
+  ion-list {
+    width: 70%;
+    padding: 0px auto !important;
+    margin: 12px 15%;
+  }
+}

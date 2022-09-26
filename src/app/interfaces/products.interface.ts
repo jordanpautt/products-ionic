@@ -4,4 +4,5 @@ export interface IProducts {
   category: 'hogar' | 'variado';
   description:string;
   price: number;
+  
 }

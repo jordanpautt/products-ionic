@@ -7,11 +7,69 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <p  style="text-align: center;">
-    <ion-text>
-      {{price | currency }}
-    </ion-text>
-  </p>
-  {{name}}
-</ion-content>
+  <ion-content>
+    <div class="check">
+      <p >
+        <ion-text>
+          {{name}}
+          
+        </ion-text>
+      </p>
+    </div>
+    
+    <div class="check2">
+      
+        <ion-text>
+          {{price | currency }}
+        </ion-text>
+        
+    </div>
+    <div class="number">
+      <p>
+        <ion-text>
+          $0
+        </ion-text>  
+      </p>
+    </div>
+    <div class="envio">
+      <p>
+        <ion-text>
+          Envio
+        </ion-text>  
+      </p>
+    </div>
+    
+    <div class="linea">
+
+    </div>
+    <div class="total">
+      <p>
+        <ion-text>
+          Total
+        </ion-text>  
+      </p>
+    </div>
+    <div class="check2">
+      
+      <ion-text>
+        {{price | currency }}
+      </ion-text>
+      
+  </div>
+  <div class="compra">
+    <ion-button (click)="presentAlert()">Comprar</ion-button>
+
+  </div>
+  
+
+    
+  </ion-content>
+    
+
+
+
+  
+
+
+
+ 

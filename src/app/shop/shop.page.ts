@@ -12,7 +12,6 @@ export class ShopPage implements OnInit {
   name = '';
   alert = '';
 
-
   constructor(
     private router: ActivatedRoute,
     private alertController: AlertController,
@@ -47,8 +46,8 @@ export class ShopPage implements OnInit {
 
   async buySuccess() {
     const toast = await this.toastController.create({
-      message: 'La compra ha sido exitosa',
-      duration: 4000,
+      message: '¡La compra ha sido exitosa.!',
+      duration: 3000,
       color: 'success',
       mode: 'ios',
     });

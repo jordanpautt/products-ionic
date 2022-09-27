@@ -14,12 +14,10 @@
   </ion-header>
 
   <ion-list>
-    <ion-item lines="none">
       <ion-select interface="popover" placeholder="Select Category" (ionChange)="handleSelect($event)">
         <ion-select-option value="hogar">Hogar</ion-select-option>
         <ion-select-option value="variado">Variados</ion-select-option>
       </ion-select>
-    </ion-item>
   </ion-list>
 
   <app-card-products [selectCategory]="selectCategory"></app-card-products>
